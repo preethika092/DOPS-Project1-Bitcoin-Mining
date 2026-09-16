@@ -1,0 +1,22 @@
+Work unit = 10,000 candidate strings
+Total test range = 10,000,000
+GatorLink prefix = psheshadrireddy;
+
+We actually tested different work-unit sizes on your Mac:
+
+Work unit	Approx. runtime
+5,000	0.542 s
+10,000	0.512 s
+25,000	0.520 s
+50,000	0.526 s
+
+So 10,000 was the fastest among the sizes we tested.
+
+
+to run this
+-> erlc project1.erl
+-> erlc worker.erl
+-> (type a no) 4
+
+in another terminal
+-> ./project1 192.168.0.50 
