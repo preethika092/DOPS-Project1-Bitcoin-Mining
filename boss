@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Usage: ./boss <number_of_zeros | server_ip>"
+    exit 1
+fi
+
+erlc boss.erl
+erlc miner.erl
+
+exec erl -noshell -eval "boss:main([\"$1\"])."
